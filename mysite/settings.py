@@ -24,15 +24,12 @@ SECRET_KEY = '#p*&&2uuwe5nnc2%ep08&5u%-%s$94kz1@@ih=zrbg(pn=#z4+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
 INSTALLED_APPS = [
-    'library.apps.LibraryConfig',
-    'comments.apps.CommentsConfig',
     'blog.apps.BlogConfig',
-    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -20,9 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('', debug.default_urlconf, name='index'),
     path('admin/', admin.site.urls),
-    path('polls/', include('polls.urls')),
     path('blog/', include('blog.urls')),
-    path('comment/', include('comments.urls')),
-    path('library/', include('library.urls')),
 ]
+
 
